@@ -31,11 +31,10 @@ public class paquete{
 
     @Override
     public String toString() {
-        return "\nPAQUETE{" +
-                "trackingNumber='" + trackingNumber + '\'' +
-                ", senderAdrees=" + senderAdrees +"\n"+
-                ", recipentAddress=" + recipientAddress +
-                ", estimatedDeliveryDate=" + estimatedDeliveryDate +
-                '}'+"\n";
+        return "\nPAQUETE\n" +
+                "Número de rastreo: " + trackingNumber + "\n" +
+                "Dirección del remitente: " + senderAdrees +"\n"+
+                "Dirección del destinatario: " + recipientAddress +"\n"+
+                "Fecha estimada de entrega: " + estimatedDeliveryDate +"\n";
     }
 }

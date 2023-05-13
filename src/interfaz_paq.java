@@ -64,7 +64,7 @@ public interfaz_paq(String titulo) {
             ts.addPackage(new paquete(new address(txtCalleSalida.getText(),txtCiudadSalida.getText(),txtEstadoSalida.getText(),txtCodigoSalida.getText()),
                     new address(txtCalleLlegada.getText(),txtCiudadLlegada.getText(),txtEstadoLlegada.getText(),txtCodigoLlegada.getText()),
                     LocalDate.of(Integer.parseInt(txtAnio.getText()), Integer.parseInt(txtMes.getText()), Integer.parseInt(txtDia.getText()))));
-            JOptionPane.showMessageDialog(null, "Paquete creado correctamente \n Código: "+ts.getLastPackageCode());
+            JOptionPane.showMessageDialog(null, "Paquete creado correctamente\n Código: "+ts.getLastPackageCode());
         }
     });
     btnRemover.addActionListener(new ActionListener() {

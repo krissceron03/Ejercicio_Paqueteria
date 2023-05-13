@@ -8,7 +8,7 @@ import java.util.List;
 public class trackingSystem{
     List<paquete> listaPaquetes = new ArrayList<>();
     public void addPackage(paquete pkg){
-        boolean yaAñadido= false;
+        /*boolean yaAñadido= false;
         for (paquete p:listaPaquetes) {
             if (p.getTrackingNumber().equals(pkg.getTrackingNumber())){
                yaAñadido=true;
@@ -18,7 +18,8 @@ public class trackingSystem{
                 listaPaquetes.add(pkg);
                 JOptionPane.showMessageDialog(null, "Paquete añadido correctamente");
             }
-        }
+        }*/
+        listaPaquetes.add(pkg);
     }
 
     public boolean removePackage(String trackingNumber1){
@@ -90,6 +91,7 @@ public class trackingSystem{
     public String getLastPackageCode() {
         return listaPaquetes.get(listaPaquetes.size()-1).getTrackingNumber();
     }
+
     public String mostrarLista(List<paquete> lista){
         String mostrar="";
         for (paquete package1 : lista) {
@@ -99,20 +101,19 @@ public class trackingSystem{
         return mostrar;
     }
     public void datosQuemados(){
-        listaPaquetes.add(new paquete(new address("Calle envío 1", "Ciudad envío 1", "Enviado 1", "Cod envío 1"),new address("Calle recibo 1", "Ciudad recibo 1","Recibido 1", "Cod recibido 1"),LocalDate.of(2023,4,11)));
-        listaPaquetes.add(new paquete(new address("Calle envío 2", "Ciudad envío 2", "Enviado 2", "Cod envío 2"),new address("Calle recibo 2", "Ciudad recibo 2","Recibido 2", "Cod recibido 2"),LocalDate.of(2023,5,22)));
-        listaPaquetes.add(new paquete(new address("Calle envío 3", "Ciudad envío 3", "Enviado 3", "Cod envío 3"),new address("Calle recibo 3", "Ciudad recibo 3","Recibido 3", "Cod recibido 3"),LocalDate.of(2023,6,3)));
-        listaPaquetes.add(new paquete(new address("Calle envío 4", "Ciudad envío 4", "Enviado 4", "Cod envío 4"),new address("Calle recibo 4", "Ciudad recibo 4","Recibido 4", "Cod recibido 4"),LocalDate.of(2023,1,12)));
-        listaPaquetes.add(new paquete(new address("Calle envío 5", "Ciudad envío 5", "Enviado 5", "Cod envío 5"),new address("Calle recibo 5", "Ciudad recibo 5","Recibido 5", "Cod recibido 5"),LocalDate.of(2023,3,6)));
-        listaPaquetes.add(new paquete(new address("Calle envío 6", "Ciudad envío 6", "Enviado 6", "Cod envío 6"),new address("Calle recibo 6", "Ciudad recibo 6","Recibido 6", "Cod recibido 6"),LocalDate.of(2023,2,15)));
+        listaPaquetes.add(new paquete(new address("Calle 10 de Agosto", "Guayaquil", "Enviado 1", "2134"),new address("Av. Napo", "Quito","Recibido 1", "2134"),LocalDate.of(2023,4,11)));
+        listaPaquetes.add(new paquete(new address("Avenida Edgar Cordova Polo", "Machala", "Enviado 2", "1023"),new address("Calle 10 de Agosto", "Guayaquil","Recibido 2", "1023"),LocalDate.of(2023,5,22)));
+        listaPaquetes.add(new paquete(new address("Calle Larga", "Cuenca", "Enviado 3", "4321"),new address("Avenida Edgar Cordova Polo", "Machala","Recibido 3", "4321"),LocalDate.of(2023,6,3)));
+        listaPaquetes.add(new paquete(new address("Calle Montego Bye", "Ambato", "Enviado 4", "3451"),new address("Calle José Calama", "Quito","Recibido 4", "3451"),LocalDate.of(2023,1,12)));
+        listaPaquetes.add(new paquete(new address("Calle 12 de Octubre", "Quito", "Enviado 5", "8912"),new address("Montego Bye", "Ambato","Recibido 5", "8912"),LocalDate.of(2023,3,6)));
+        listaPaquetes.add(new paquete(new address("Calle José Calama", "Quito", "Enviado 6", "0054"),new address("Calle Larga", "Cuenca","Recibido 6", "0054"),LocalDate.of(2023,2,15)));
 
     }
 
     @Override
     public String toString() {
-        return "TrackingSystem{" +
-                "listaPaquetes=" + listaPaquetes +
-                '}';
+        return "Sistema de rastreo " +
+                "LISTA DE PAQUETES: \n" + listaPaquetes;
     }
 }
 
