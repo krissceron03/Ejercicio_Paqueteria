@@ -313,7 +313,7 @@
                       <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
-                      <text value="REMOVER"/>
+                      <text value="ELIMINAR"/>
                     </properties>
                   </component>
                   <vspacer id="7e5af">
@@ -328,7 +328,7 @@
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text value="Ingrese el código trancking del paquete"/>
+                  <text value="Ingrese el código de rastreo del paquete"/>
                 </properties>
               </component>
               <component id="5928b" class="javax.swing.JTextField" binding="txtTrancking">
@@ -380,7 +380,7 @@
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text value="Ingrese la Ciudad de recibo:"/>
+                  <text value="Ingrese la Ciudad del destinatario"/>
                 </properties>
               </component>
               <component id="69de1" class="javax.swing.JTextField" binding="txtBuscarCiudad">
@@ -414,7 +414,7 @@
                       <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
-                      <text value="BUSCAR PAQUETE POR CIUDAD"/>
+                      <text value="BUSCAR PAQUETE POR DIRECCIÓN"/>
                     </properties>
                   </component>
                   <component id="ccb60" class="javax.swing.JTextArea" binding="tABuscarporDire">
@@ -432,7 +432,7 @@
                   <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text value="Ingrese la dirección de recibo del paquete"/>
+                  <text value="Ingrese la dirección del destinatario del paquete"/>
                 </properties>
               </component>
               <component id="6c57c" class="javax.swing.JLabel">
